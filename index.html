@@ -3,16 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listado de Tarefas Inteligente</title>
-    <link rel="stylesheet" href="css/listatarefas.css">
+    <title>Listado de Tarefas</title>
+    <script src="JS/listatarefas.js"></script>
+    <link rel="stylesheet" href="CSS/listatarefas.css">
 </head>
 <body>
-    <h1>Lista de Tarefas</h1>
-    <input type="text" id="novatarefa" placeholder="Insira a nova tarefa">
-    <button onclick="inserirtarefa()"> Adicionar tarefa</button>
-    <ul id="listadetarefas">
-        <li></li>
+    <h1>Lista de tareas</h1>
+    <input type="text" id="novaTarefa" placeholder="Digite uma nova tarefa">
+    <button onclick="adicionarTarefa()"> Inserir tarefa</button>
 
+    <ul id="listaTarefas">
+
+        <select id="filtro">
+            <option value="todas">Todas</option>
+            <option value="concluidas">Concluídas</option>
+            <option value="pendentes">Pendentes</option>
+          </select>
+            
     </ul>
+
 </body>
 </html>
